@@ -41,10 +41,9 @@ nav ul li a {
   font-weight: 700;
   line-height: 26px;
 }
-
-a:hover {
-  background: #acc0cf;
-  transition: 0.5s;
+nav ul li a:hover {
+  color: #500cc5;
+  font-size: 25px;
 }
 
 li.login-ref {
@@ -207,11 +206,28 @@ p.content-help {
   right: 12%;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1350px) {
   nav ul li {
     margin-left: 10px;
   }
+
+  .dotted {
+    width: 130px;
+    height: 130px;
+    top: 25%;
+    left: 75%;
+  }
+  .square {
+    width: 150px;
+    height: 150px;
+    top: 40%;
+    left: 55%;
+  }
+  .circle-two {
+    top: 80%;
+  }
 }
+
 @media screen and (max-width: 952px) {
   .title {
     padding-left: 0;
@@ -248,8 +264,8 @@ p.content-help {
   }
 
   .image {
-    width: 300px;
-    height: 335px;
+    width: 400px;
+    height: 435px;
     right: 0;
   }
 
@@ -257,15 +273,19 @@ p.content-help {
     width: 100px;
     height: 100px;
     top: 15%;
+    left: 57%;
   }
   .square {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     top: 24%;
-    left: 15%;
+    left: 30%;
   }
   .circle-two {
     top: 40%;
+    right: 25%;
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -342,6 +362,41 @@ p.content-help {
     width: 100px;
     height: 100px;
     top: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p.content-help {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .content-photo {
+    padding-top: 30px;
+  }
+
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .dotted {
+    width: 100px;
+    height: 100px;
+    top: 12%;
+    left: 60%;
+  }
+  .square {
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    left: 22%;
+  }
+  .circle-two {
+    width: 100px;
+    height: 100px;
+    top: 32%;
+    right: 15%;
   }
 }
 

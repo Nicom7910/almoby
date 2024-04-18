@@ -18,41 +18,57 @@
         </div>
 
       <div class="main">
-        <input type="checkbox" id="chk" aria-hidden="true" />
+
+        <div class="overlay"></div>
+        <div class="modal">Submit was successful!</div>
 
         <div class="signup">
-          <form>
-            <label class="login-label">First & Last Name</label>
-            <input class="login-input" type="text" name="txt" placeholder="i.e. John Doe" required="" />
-
-            <label class="login-label">Email</label>
-            <input class="login-input" type="email" name="email" placeholder="i.e. john@gmail.com" required="" />
-
-            <label class="login-label">Password</label>
-            <input
-              type="password"
-              class="login-input"
-              name="pswd"
-              placeholder="********"
-              required=""
-            />
-
-            <label class="login-label">Confirm Password</label>
-            <input
-              type="password"
-              class="login-input"
-              name="pswd"
-              placeholder="********"
-              required=""
-            />
-            <div class="content-terms">
-            <input type="checkbox" class='login-chk' />
-            <label class="label-terms">I agree with Terms & conditions</label>
+          <form id="form" >
+            <div class="form-input">
+              <label class="login-label">First & Last Name</label>
+              <input class="login-input" type="text" id="username" name="txt" placeholder="i.e. John Doe" />
+              <small>Error Message</small>
             </div>
-            <button>Create an account</button>
+            <div class="form-input">
+              <label class="login-label">Email</label>
+              <input class="login-input" type="email" id="email" name="email" placeholder="i.e. john@gmail.com" />
+              <small>Error Message</small>
+            </div>
+            <div class="form-input">
+              <label class="login-label">Password</label>
+              <input
+              id="password"
+                type="password"
+                class="login-input"
+                name="pswd"
+                placeholder="********"
+              />
+              <small>Error Message</small>
+            </div>
+            <div class="form-input">
+              <label class="login-label">Confirm Password</label>
+              <input
+              id="password-validate"
+                type="password"
+                class="login-input"
+                name="pswd"
+                placeholder="********"
+              />
+              <small>Error Message</small>
+            </div>
+              <div class="content-terms">
+                <input id="terms-check"  type="checkbox" class='login-chk' value="check"/>
+                <label class="label-terms">I agree with Terms & conditions</label>
+            </div>
+           
+
+            <button id="btncheck" type="submit" disabled>Create an account</button>
           </form>
         </div>
     </section>
     </div>
   </body>
+  <script src="./js/index.js"></script>
+
+  
 </html>

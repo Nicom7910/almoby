@@ -47,14 +47,11 @@ p.signup-info {
 
 .main {
   width: 350px;
-  height: 500px;
+  height: 550px;
   background: #ffffff;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 5px 20px 50px #000;
-}
-#chk {
-  display: none;
 }
 .signup {
   position: relative;
@@ -62,13 +59,31 @@ p.signup-info {
   height: 100%;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 25px 0 25px 0;
+}
+
 .login-label {
   width: 75%;
   height: 20px;
-  position: relative;
   padding-left: 14%;
-  top: 13px;
+  top: 10px;
   font-weight: 700;
+}
+small {
+  color: #e75c3c;
+  margin-left: 14%;
+  visibility: hidden;
 }
 
 .login-input {
@@ -77,7 +92,7 @@ p.signup-info {
   background: #ffffff;
   justify-content: center;
   display: flex;
-  margin: 15px auto;
+  margin: 2px auto;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -91,7 +106,14 @@ p.signup-info {
 
 .content-terms {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+p.error-text {
+  color: #e75c3c;
+  margin: 0;
 }
 
 .label-terms {
@@ -114,8 +136,43 @@ button {
   border: none;
   border-radius: 5px;
   transition: 0.2s ease-in;
-  cursor: pointer;
 }
 button:hover {
   background: #6d44b8;
+}
+
+#btncheck:enabled {
+  cursor: pointer;
+}
+
+#btncheck:disabled {
+  cursor: no-drop;
+}
+
+div.form-input.error small {
+  visibility: visible;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  padding: 20px;
+  background-color: #11f50d;
+  border-radius: 35px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 500;
 }
