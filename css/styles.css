@@ -128,7 +128,7 @@ p.content-help {
 }
 
 .image {
-  width: 450px;
+  width: 520px;
   height: 785px;
   position: relative;
   top: 14.5%;
@@ -190,7 +190,7 @@ p.content-help {
   border-radius: 20px;
   position: absolute;
   bottom: 40%;
-  left: 63%;
+  left: 61%;
   border: 10px solid #68d585;
   border-width: 10px;
   transform: rotate(348deg);
@@ -231,17 +231,19 @@ p.content-help {
   nav ul li a {
     font-size: 16px;
   }
-  main {
-    justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
   }
+
   .content-info {
     width: 70%;
     top: 60%;
   }
 
   .image {
-    width: 380px;
-    height: 670px;
+    right: 0;
   }
 }
 
@@ -287,20 +289,35 @@ p.content-help {
     left: 0;
   }
 
-  main {
-    text-align: center;
-  }
-
   .content-info {
     width: 50%;
-    padding: 234 0 50 0;
+    align-self: center;
+    padding: 50 0 50 0;
+  }
+  .content-title {
+    width: 100%;
   }
   .content-extra {
+    width: 100%;
+  }
+  .login-btn {
     width: 100%;
   }
 
   li.login-ref {
     margin-right: 0;
+  }
+
+  .dotted {
+    top: 15%;
+  }
+  .square {
+    position: absolute;
+    top: 28%;
+    left: 15%;
+  }
+  .circle-two {
+    top: 70%;
   }
 }
 
