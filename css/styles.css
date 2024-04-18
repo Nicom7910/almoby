@@ -7,6 +7,7 @@
 
 body {
   font-family: "Rubik";
+  overflow-x: hidden;
 }
 
 nav {
@@ -128,10 +129,10 @@ p.content-help {
 }
 
 .image {
-  width: 520px;
-  height: 785px;
+  width: 95%;
+  height: 781px;
   position: relative;
-  top: 14.5%;
+  top: 15%;
   right: 35%;
 }
 
@@ -242,8 +243,29 @@ p.content-help {
     top: 60%;
   }
 
+  .content-photo {
+    padding-top: 30px;
+  }
+
   .image {
+    width: 300px;
+    height: 335px;
     right: 0;
+  }
+
+  .dotted {
+    width: 100px;
+    height: 100px;
+    top: 15%;
+  }
+  .square {
+    width: 100px;
+    height: 100px;
+    top: 24%;
+    left: 15%;
+  }
+  .circle-two {
+    top: 40%;
   }
 }
 
@@ -313,15 +335,33 @@ p.content-help {
   }
   .square {
     position: absolute;
-    top: 28%;
+    top: 24%;
     left: 15%;
   }
   .circle-two {
-    top: 70%;
+    width: 100px;
+    height: 100px;
+    top: 40%;
   }
 }
 
 @media screen and (max-width: 385px) {
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(89.99deg, #473bf0 -66.74%, #ffffff 149.48%);
+    left: -100%;
+    top: 12%;
+    place-items: center;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+
+  nav ul li {
+    margin: 40px;
+  }
+
   label.title {
     font-size: 25px;
     padding: 0 20px;
@@ -332,5 +372,38 @@ p.content-help {
 
   .btn-login {
     width: 100%;
+  }
+
+  p.content-help {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .content-photo {
+    padding-top: 30px;
+  }
+
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .dotted {
+    width: 100px;
+    height: 100px;
+    top: 17%;
+    right: 12%;
+  }
+  .square {
+    width: 100px;
+    height: 100px;
+    top: 27%;
+    left: 12%;
+  }
+  .circle-two {
+    width: 100px;
+    height: 100px;
+    top: 45%;
+    right: 7%;
   }
 }
